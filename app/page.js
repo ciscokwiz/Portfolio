@@ -113,7 +113,13 @@ export default function Home() {
       </section>
       <section className='px-10'>
         <div className='p-10 font-mono'>
-          <h2 className='  text-blue-900 text-xl font-bold mt-4 mb-4'>Contact</h2>
+          <h2 className='  text-blue-900 text-xl font-bold mt-4 mb-4'>Get in touch</h2>
+          <div className=' mt-7 ml-5 flex flex-col'>
+            <input className=' my-5 h-10 max-w-80 rounded pl-5' type="text" placeholder='Your name'/>
+            <input className=' my-5 h-10 max-w-80 rounded pl-5' type="email" placeholder='Email address'/>
+            <input className=' my-5 h-20 max-w-80 rounded pl-5' type="text" placeholder='Message'/>
+            <button className=' bg-cyan-500 px-3 ml-5 py-1 text-white rounded-md hover:bg-slate-400 h-8 w-20 text-center'>Send</button>
+          </div>
         </div>
       </section>
     </main>
