@@ -9,6 +9,8 @@ import {
 } from 'react-icons/ai';
 import Image from 'next/image';
 import waveAnimation from '../public/dev-ed-wave.png';
+import next from '../public/next.svg';
+
 
 
 export default function Home() {
@@ -81,6 +83,37 @@ export default function Home() {
               <li className='py-1 hover:text-slate-400'>Figma</li>
             </ul>
           </div>
+        </div>
+      </section>
+      <section className='px-10'>
+        <div className='p-10 font-mono'>
+          <h2 className='  text-blue-900 text-xl font-bold mt-4 mb-4'>Projects</h2>
+          <div className=' lg:flex gap-10 ' >
+            <div className=' text-center shadow-lg rounded-xl p-10 '>
+              <h2 className='  text-blue-950 text-m font-bold mb-2 mt-5 pt-2'>Forms</h2>
+              <Image src={next} className=' relative w-50 h-50 mb-10 mt-5'/>
+              <h3 className=' text-teal-800 text-m my-5'>Vest Signin Page</h3>
+              <a className=' bg-cyan-500 px-3 py-1 text-white rounded-md hover:bg-slate-400' href="#">Link</a>
+            </div>
+            <div className=' text-center shadow-lg rounded-xl p-10 '>
+              <h2 className='  text-blue-950 text-m font-bold mb-2 mt-5 pt-2'>Web Pages</h2>
+              <Image src={next} className=' relative w-50 h-50 mb-10 mt-5'/>
+              <h3 className=' text-teal-800 text-m my-5'>Hostel Match</h3>
+              <a className=' bg-cyan-500 px-3 py-1 text-white rounded-md hover:bg-slate-400' href="#">Link</a>
+            </div>
+            <div className=' text-center shadow-lg rounded-xl p-10 '>
+              <h2 className='  text-blue-950 text-m font-bold mb-2 mt-5 pt-2'>Forms</h2>
+              <Image src={next} className=' relative w-50 h-50 mb-10 mt-5'/>
+              <h3 className=' text-teal-800 text-m my-5'>Vest Signin Page</h3>
+              <a className=' bg-cyan-500 px-3 py-1 text-white rounded-md hover:bg-slate-400' href="#">Link</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <section className='px-10'>
+        <div className='p-10 font-mono'>
+          <h2 className='  text-blue-900 text-xl font-bold mt-4 mb-4'>Contact</h2>
         </div>
       </section>
     </main>
