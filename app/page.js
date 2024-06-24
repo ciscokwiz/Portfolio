@@ -43,9 +43,9 @@ export default function Home() {
             </p>          
           </div>
           <div className=' text-3xl flex gap-10 text-gray-900 py-3 cursor-pointer'>
-            <AiFillTwitterCircle/>
-            <AiFillLinkedin/>
-            <AiFillMail/>
+            <a href= 'https://x.com/ciscoikz' target=""><AiFillTwitterCircle/></a>
+            <a href='https://www.linkedin.com/in/kosiso-ikezogwo/' target=""><AiFillLinkedin/></a>
+            <a href='https://ikezogwokosiso16@gmail.com' target=""><AiFillMail/></a>
           </div>
           <div className=' relative mx-auto bg-gray-900 rounded-full w-80 h-80 mt-20 overflow-hidden'>
             <Image src={waveAnimation} layout='fill' objectFit='cover'/>
