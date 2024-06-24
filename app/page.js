@@ -37,8 +37,8 @@ export default function Home() {
         <div className=' p-10 font-mono'>
           <div className=' my-5'>
             <p className='py-1 text-gray-500'>My name is</p>
-            <h2 className=' text-blue-900 text-5xl pt-2 pb-3 font-bold'>Ikezogwo Kosisochukwu</h2>
-            <h2 className='text-blue-900 text-xl font-bold'>Frontend Web Developer</h2>
+            <h2 className=' text-blue-900 text-6xl pt-2 pb-3 font-extrabold my-5'>Ikezogwo Kosisochukwu</h2>
+            <h2 className='text-blue-900 text-xl font-bold my-2'>Frontend Web Developer</h2>
             <p className='py-3 text-gray-500'>
               I'm software engineer based in Lagos, NG specializ ing in building (and ocassionally designing) exceptional websites, applications, and everything in between
             </p>          
