@@ -93,20 +93,20 @@ export default function Home() {
           <div className=' lg:flex gap-10 flex-row justify-evenly' >
             <div className=' text-center shadow-lg rounded-xl p-10'>
               <h2 className='  text-blue-950 text-m font-bold mb-2 mt-5 pt-2'>Webpage</h2>
-              <h1 className='logo'>Hair<span className="color-logo">Shades</span>.co</h1>
+              <h1 className='logo'>Hair<span className="hair-logo">Shades</span>.co</h1>
               <h3 className=' text-teal-800 text-m my-9'>HairShades.co website</h3>
               <a className=' bg-cyan-500 px-3 py-1 text-white rounded-md hover:bg-slate-400' href="https://github.com/ciscokwiz/interactivity">Open</a>
             </div>
             <div className=' text-center shadow-lg rounded-xl p-10 '>
               <h2 className='  text-blue-950 text-m font-bold mb-2 mt-5 pt-2'>Weather API</h2>
-              <h1 className='logo'>Get<span className="color-logo">Weather</span> App</h1>
+              <h1 className='logo'>Get<span className="weather-logo">Weather</span> App</h1>
               <h3 className=' text-teal-800 text-m my-5'>Weather API Page</h3>
               <a className=' bg-cyan-500 px-3 py-1 text-white rounded-md hover:bg-slate-400' href="/weather">Open</a>
             </div>
             <div className=' text-center shadow-lg rounded-xl p-10 '>
-              <h2 className='  text-blue-950 text-m font-bold mb-2 mt-5 pt-2'>Forms</h2>
-              <Image src={next} className=' relative w-50 h-50 mb-10 mt-5'/>
-              <h3 className=' text-teal-800 text-m my-5'>Vest Signin Page</h3>
+              <h2 className='  text-blue-950 text-m font-bold mb-2 mt-5 pt-2'>Form</h2>
+              <h1 className='logo'>Vest<span className="signin-logo"> Login</span> Page</h1>
+              <h3 className=' text-teal-800 text-m my-5'> Signin Page</h3>
               <a className=' bg-cyan-500 px-3 py-1 text-white rounded-md hover:bg-slate-400' href="https://github.com/ciscokwiz/login-page">Open</a>
             </div>
           </div>
@@ -120,7 +120,7 @@ export default function Home() {
             <input className=' my-5 h-10 max-w-80 rounded pl-5' type="text" placeholder='Your name'/>
             <input className=' my-5 h-10 max-w-80 rounded pl-5' type="email" placeholder='Email address'/>
             <input className=' my-5 h-20 max-w-80 rounded pl-5' type="text" placeholder='Message'/>
-            <button className=' bg-cyan-500 px-3 py-1 text-white rounded-md hover:bg-slate-400 h-10 w-20 text-center'>Send</button>
+            <button className=' bg-cyan-500 px-3 py-1 text-white rounded-md hover:bg-slate-400 h-10 w-20 text-center' formAction=''>Send</button>
           </div>
         </div>
       </section>
