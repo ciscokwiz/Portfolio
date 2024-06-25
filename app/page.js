@@ -6,7 +6,7 @@ import {
   AiFillLinkedin,
   AiFillMail
 } from 'react-icons/ai';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import waveAnimation from '../public/dev-ed-wave.png';
 import './page.css';
 import Navbar from './components/navbar'
