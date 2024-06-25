@@ -8,10 +8,8 @@ import {
 } from 'react-icons/ai';
 import Image from 'next/image';
 import waveAnimation from '../public/dev-ed-wave.png';
-import next from '../public/next.svg';
-import {BsFillMoonStarsFill} from 'react-icons/bs';
-import Link from "next/link";
 import './page.css';
+import Navbar from './components/navbar'
 
 
 export default function Home() {
@@ -25,14 +23,8 @@ export default function Home() {
       {/* This is the Hero section*/} 
       
       <section className=' min-h-screen px-10'>
-        <nav className=' py-6 mb-2 flex justify-between mx-10 mt-4'>
-          <h1 className='text-xl mr10` text-blue-900 ' >My Portfolio</h1>
-          <ul className=' flex justify-evenly'>
-            <li><BsFillMoonStarsFill className=' cursor-pointer text-2xl'/></li>
-            <li>
-              <Link className=' bg-cyan-400 px-4 py-2 text-white rounded-md ml-10 hover:bg-slate-400' href="/resume">Resume</Link>
-            </li>
-          </ul>
+        <nav className=' py-6 mb-2 mx-10 mt-4'>
+          <Navbar />
         </nav>
         <div className=' p-10 font-mono'>
           <div className=' my-5'>
@@ -125,6 +117,5 @@ export default function Home() {
         </div>
       </section>
     </main>
-  );
+  ); 
 }
- 
