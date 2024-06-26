@@ -1,6 +1,6 @@
 'use client'
 
-import {useState} from 'react';
+import {useLayoutEffect, useState} from 'react';
 import {
   AiFillTwitterCircle,
   AiFillLinkedin,
@@ -12,9 +12,21 @@ import './page.css';
 import Navbar from './components/navbar'
 
 
-export default function Home() {
 
-  const[textHover, settextHover] = useState('first')
+export default function Home() {
+  useLayoutEffect(() => {
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach((entry)=>{
+          if(entry.isIntersecting){
+              entry.target.classList.add('show');
+          }else{
+              entry.target.classList.remove('show');
+          }
+      });
+    })
+    const hiddenElem = document.querySelectorAll('.hidden');
+    hiddenElem.forEach((elem)=>{ observer.observe(elem) });
+  })
 
 
   return (
