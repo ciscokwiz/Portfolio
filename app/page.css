@@ -39,3 +39,37 @@
     transform: translateX(0);
 
 }
+.inner-heading{
+    border: 0px, solid #ddd;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+}
+.inner-heading span{
+    position: relative;
+    animation: animate 10s ease;
+    animation-iteration-count: 2;
+}
+
+@keyframes animate {
+    0%,100%{
+        top: 0;
+    }
+    25%{
+        top: 0;
+    }
+    50%{
+        top: -50px;
+    }
+    70%{
+        top: -50px;
+    }
+    80%{
+        top: -100px;
+    }
+    95%{
+        top: -100px;
+    }
+
+
+}

@@ -1,6 +1,6 @@
 'use client'
 
-import {useLayoutEffect, useState} from 'react';
+import {useLayoutEffect, useState, useEffect} from 'react';
 import {
   AiFillTwitterCircle,
   AiFillLinkedin,
@@ -14,7 +14,7 @@ import Navbar from './components/navbar'
 
 
 export default function Home() {
-  useLayoutEffect(() => {
+  useEffect(() => {
     const observer = new IntersectionObserver((entries)=>{
       entries.forEach((entry)=>{
           if(entry.isIntersecting){
@@ -30,20 +30,30 @@ export default function Home() {
 
 
   return (
-    <main className=' bg-white'>
+    <main className=' bg-gray-300 px-10'>
 
       {/* This is the Hero section*/} 
       
-      <section className=' min-h-screen px-10'>
-        <nav className=' py-6 mb-2 mx-10 mt-4'>
+      <section className=' min-h-screen'>
+        <nav className=' py-6 mb-2 mx-0 pt-8'>
           <Navbar />
         </nav>
-        <div className=' p-10 font-mono'>
+        <div className=' py-10 px-20 font-mono'>
           <div className=' my-5'>
-            <p className='py-1 text-gray-500'>My name is</p>
-            <h2 className=' text-blue-900 text-6xl pt-2 pb-3 font-extrabold my-5'>Ikezogwo Kosisochukwu</h2>
-            <h2 className='text-blue-900 text-xl font-bold my-2'>Frontend Web Developer</h2>
-            <p className='py-3 text-gray-500'>
+            <p className='py-1 text-gray-800'>My name is</p>
+            <h2 className=' text-blue-900 text-6xl pt-1 pb-2 font-extrabold my-3'>Ikezogwo Kosisochukwu</h2>
+            <h2 className='text-blue-900 text-xl font-bold my-2'> 
+              <div className="inner-heading">
+                <span>
+                    Frontend Web Developer<br/>
+                    React Developer<br/>
+                    Node developer<br/>
+    
+                </span>
+            </div>
+
+            </h2>
+            <p className='py-3 text-gray-800'>
               I'm software engineer based in Lagos, NG specializ ing in building (and ocassionally designing) exceptional websites, applications, and everything in between
             </p>          
           </div>
@@ -58,44 +68,48 @@ export default function Home() {
         </div>
       </section>
     
-      {/* This is the skills section*/}     
-      <section className='px-10'>
+      {/* This is the skills section*/}   
+  
+      <section className='px-5 my-5'>
         <div className=' p-10 font-mono'>
           <h2 className='  text-blue-900 text-xl font-bold mt-4 mb-2'>Skills</h2>
-          <p className=' mt-1 pb-3 text-gray-500'>Here are a few technologies i've been working on recently:</p>
+          <p className=' mt-1 pb-3 text-gray-800'>Here are a few technologies i've been working with recently:</p>
           <div>
             <h2 className='  text-blue-950 text-m font-bold mb-2 mt-5'>Frontend Frameworks</h2>
             <ul className='py-1 pl-5 text-teal-800 text-sm cursor-pointer'>
-              <li className='py-1 hover:text-slate-400'>Html</li>
-              <li className='py-1 hover:text-slate-400'>CSS</li>
-              <li className='py-1 hover:text-slate-400'>Javascript</li>
-              <li className='py-1 hover:text-slate-400'>React JS</li>
-              <li className='py-1 hover:text-slate-400'>Next JS</li>
-              <li className='py-1 hover:text-slate-400'>Tailwind</li>
-              <li className='py-1 hover:text-slate-400'>Node JS</li>
+              <li className='py-1 hover:text-slate-600'>Html</li>
+              <li className='py-1 hover:text-slate-600'>CSS</li>
+              <li className='py-1 hover:text-slate-600'>Javascript</li>
+              <li className='py-1 hover:text-slate-600'>React JS</li>
+              <li className='py-1 hover:text-slate-600'>Next JS</li>
+              <li className='py-1 hover:text-slate-600'>Tailwind</li>
+              <li className='py-1 hover:text-slate-600'>Node JS</li>
             </ul>
           </div>
           <div>
             <h2 className='  text-blue-950 text-m font-bold mb-2 mt-5'>Version Control</h2>
             <ul className='py-1 pl-5 text-teal-800 text-sm cursor-pointer'>
-              <li className='py-1 hover:text-slate-400'>Git</li>
-              <li className='py-1 hover:text-slate-400'>GitBucket</li>
+              <li className='py-1 hover:text-slate-600'>Git</li>
+              <li className='py-1 hover:text-slate-600'>GitBucket</li>
             </ul>
           </div>
           <div>
             <h2 className='  text-blue-950 text-m font-bold mb-2 mt-5'>Tools</h2>
             <ul className='py-1 pl-5 text-teal-800 text-sm cursor-pointer'>
-              <li className='py-1 hover:text-slate-400'>VScode</li>
-              <li className='py-1 hover:text-slate-400'>Figma</li>
+              <li className='py-1 hover:text-slate-600'>VScode</li>
+              <li className='py-1 hover:text-slate-600'>Figma</li>
             </ul>
           </div>
         </div>
       </section>
-      <section className='px-10'>
-        <div className='p-10 font-mono'>
+
+      {/* This is the Projects section*/}   
+
+      <section className='px-5 my-5'>
+        <div className='p-10 font-mono flex flex-col gap-10'>
           <h2 className='  text-blue-900 text-xl font-bold mt-4 mb-4'>Projects</h2>
           <div className=' lg:flex gap-10 flex-row justify-evenly' >
-            <div className=' text-center shadow-lg rounded-xl p-10'>
+            <div className=' text-center shadow-2xl rounded-xl p-10 bg-gray-400' >
               <h2 className='  text-blue-950 text-m font-bold mb-2 mt-5 pt-2'>Webpage</h2>
               <h1 className='logo'>Hair<span className="hair-logo">Shades</span>.co</h1>
               <h3 className=' text-teal-800 text-m my-9'>HairShades.co website</h3>
@@ -107,17 +121,19 @@ export default function Home() {
               <h3 className=' text-teal-800 text-m my-5'>Weather API Page</h3>
               <a className=' bg-cyan-500 px-3 py-1 text-white rounded-md hover:bg-slate-400' href="/weather">Open</a>
             </div>
-            <div className=' text-center shadow-lg rounded-xl p-10 '>
+            <div className=' text-center shadow-lg rounded-xl p-10  bg-gray-400'>
               <h2 className='  text-blue-950 text-m font-bold mb-2 mt-5 pt-2'>Form</h2>
               <h1 className='logo'>Vest<span className="signin-logo"> Login</span> Page</h1>
               <h3 className=' text-teal-800 text-m my-5'> Signin Page</h3>
               <a className=' bg-cyan-500 px-3 py-1 text-white rounded-md hover:bg-slate-400' href="https://github.com/ciscokwiz/login-page">Open</a>
             </div>
           </div>
-
         </div>
       </section>
-      <section className='px-10'>
+
+       {/* This is the Contacts section*/}   
+     
+      <section className=''>
         <div className='p-10 font-mono'>
           <h2 className='  text-blue-900 text-xl font-bold mt-4 mb-4'>Contact Me</h2>
           <div className=' mt-7 ml-5 flex flex-col'>

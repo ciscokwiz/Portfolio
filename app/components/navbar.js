@@ -14,7 +14,7 @@ export default function Navbar(){
             <ul className=' flex justify-evenly'>
                 <li><BsFillMoonStarsFill className=' cursor-pointer text-2xl'/></li>
                 <li>
-                    <Link className=' bg-cyan-400 px-4 py-2 text-white rounded-md ml-10 hover:bg-slate-400' href="/resume">Resume</Link>
+                    <Link className=' bg-cyan-400 px-4 py-2 text-white rounded-md ml-10 hover:bg-slate-400' href="">Resume</Link>
                 </li>
             </ul>
         </div>
