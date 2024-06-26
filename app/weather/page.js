@@ -42,10 +42,10 @@ export default function Resume(){
             </nav>
             <main className="h-screen flex flex-col items-center gap-3 pt-20 text-center">
                 <div className="h-auto w-auto text-center flex flex-col gap-3 mt-40 bg-gray-500 rounded-xl shadow-lg border px-3">
-                    <h2 className="mt-5 font-mono">Get Weather</h2>
-                    <input className="rounded-xl border pl-3 py-1 px-10 text-blue-300" type="text" id="cityInput"  placeholder="Enter City"/>
-                    <button className="rounded-xl text-sm font-mono text-s border px-1 py-1 text-center hover:text-cyan-300" onClick={getWeather}>Get info</button>
-                    <div className="mb-5 text-cyan-400" id="info"></div>
+                    <h2 className="mt-5 font-mono"> Get Weather </h2>
+                    <input className="rounded-md border pl-3 py-1 px-10 text-gray-800" type="text" id="cityInput"  placeholder="Enter City"/>
+                    <button className="rounded-xl text-sm font-mono text-s border px-1 py-1 text-center hover:text-cyan-600" onClick={getWeather}> Get info </button>
+                    <div className="mb-5 text-cyan-600" id="info"></div>
                 </div>
             </main>
         </section>
