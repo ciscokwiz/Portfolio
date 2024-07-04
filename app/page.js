@@ -14,19 +14,7 @@ import Navbar from './components/navbar'
 
 
 export default function Home() {
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries)=>{
-      entries.forEach((entry)=>{
-          if(entry.isIntersecting){
-              entry.target.classList.add('show');
-          }else{
-              entry.target.classList.remove('show');
-          }
-      });
-    })
-    const hiddenElem = document.querySelectorAll('.hidden');
-    hiddenElem.forEach((elem)=>{ observer.observe(elem) });
-  })
+  
 
 
   return (
@@ -62,7 +50,7 @@ export default function Home() {
             <a href='https://www.linkedin.com/in/kosiso-ikezogwo/' target=""><AiFillLinkedin/></a>
             <a href='https://ikezogwokosiso16@gmail.com' target=""><AiFillMail/></a>
           </div>
-          <div className=' relative mx-auto bg-gray-900 rounded-full w-80 h-80 mt-20 overflow-hidden'>
+          <div className='wave'>
             <Image src={waveAnimation} layout='fill' objectFit='cover'/>
           </div>
         </div>
