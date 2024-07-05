@@ -14,20 +14,39 @@ import Navbar from './components/navbar'
 
 
 export default function Home() {
+
+  useEffect( ()=>{
+    window.addEventListener('scroll', ()=>{
+      let nav = document.querySelector('nav');
+      let top = document.querySelector('.top button');
+      nav.classList.toggle('sticky', window.scrollY > 0)
+
+      top.classList.toggle('returnToTop', window.scrollY > 0)
+    })
+    
+  })
+  
   
 
-
   return (
-    <main className=' bg-gray-300 px-10'>
+    <main className=' bg-gray-300 px-10 min-h-screen'>
+
+      <div className="top">
+        <button>
+          <svg className="return-logo" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v13m0-13 4 4m-4-4-4 4"/>
+          </svg>
+        </button>
+      </div>
 
       {/* This is the Hero section*/} 
       
       <section className=' min-h-screen'>
-        <nav className=' py-6 mb-2 mx-0 pt-8'>
+        <nav >
           <Navbar />
         </nav>
         <div className=' py-10 px-20 font-mono'>
-          <div className=' my-5'>
+          <div className=' mb-5 mt-20'>
             <p className='py-1 text-gray-800'>My name is</p>
             <h2 className=' text-blue-900 text-6xl pt-1 pb-2 font-extrabold my-3'>Ikezogwo Kosisochukwu</h2>
             <h2 className='text-blue-900 text-xl font-bold my-2'> 
@@ -38,7 +57,7 @@ export default function Home() {
                     Node developer<br/>
     
                 </span>
-            </div>
+              </div>
 
             </h2>
             <p className='py-3 text-gray-800'>
@@ -58,7 +77,7 @@ export default function Home() {
     
       {/* This is the skills section*/}   
   
-      <section className='px-5 my-5'>
+      <section className='px-5 my-5' >
         <div className=' p-10 font-mono'>
           <h2 className='  text-blue-900 text-xl font-bold mt-4 mb-2'>Skills</h2>
           <p className=' mt-1 pb-3 text-gray-800'>Here are a few technologies i've been working with recently:</p>

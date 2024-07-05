@@ -10,7 +10,7 @@ import Link from "next/link";
 export default function Navbar(){
     return(
         <div className='flex justify-between'>
-            <a className='text-xl mr10` text-blue-900' href='/'>My Portfolio</a>
+            <a className='text-xl mr-3 text-blue-900' href='/'>My Portfolio</a>
             <ul className=' flex justify-evenly'>
                 <li><BsFillMoonStarsFill className=' cursor-pointer text-2xl'/></li>
                 <li>
