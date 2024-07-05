@@ -10,6 +10,7 @@ import Image from "next/legacy/image";
 import waveAnimation from '../public/dev-ed-wave.png';
 import './page.css';
 import Navbar from './components/navbar'
+import Footer from './components/footer'
 
 
 
@@ -74,7 +75,7 @@ export default function Home() {
 
             </h2>
             <p className='py-3 text-gray-800'>
-              I'm software engineer based in Lagos, NG specializ ing in building (and ocassionally designing) exceptional websites, applications, and everything in between
+              I'm software engineer based in Lagos, NG specializing in building (and ocassionally designing) exceptional websites, applications, and everything in between
             </p>          
           </div>
           <div className=' text-3xl flex gap-10 text-gray-900 py-3 cursor-pointer'>
@@ -97,27 +98,27 @@ export default function Home() {
           <div>
             <h2 className='  text-blue-950 text-m font-bold mb-2 mt-5'>Frontend Frameworks</h2>
             <ul className='py-1 pl-5 text-teal-800 text-sm cursor-pointer'>
-              <li className='py-1 hover:text-slate-600'>Html</li>
-              <li className='py-1 hover:text-slate-600'>CSS</li>
-              <li className='py-1 hover:text-slate-600'>Javascript</li>
-              <li className='py-1 hover:text-slate-600'>React JS</li>
-              <li className='py-1 hover:text-slate-600'>Next JS</li>
-              <li className='py-1 hover:text-slate-600'>Tailwind</li>
-              <li className='py-1 hover:text-slate-600'>Node JS</li>
+              <li className='py-1 hover:text-slate-800'>Html</li>
+              <li className='py-1 hover:text-slate-800'>CSS</li>
+              <li className='py-1 hover:text-slate-800'>Javascript</li>
+              <li className='py-1 hover:text-slate-800'>React JS</li>
+              <li className='py-1 hover:text-slate-800'>Next JS</li>
+              <li className='py-1 hover:text-slate-800'>Tailwind</li>
+              <li className='py-1 hover:text-slate-800'>Node JS</li>
             </ul>
           </div>
           <div>
             <h2 className='  text-blue-950 text-m font-bold mb-2 mt-5'>Version Control</h2>
-            <ul className='py-1 pl-5 text-teal-800 text-sm cursor-pointer'>
-              <li className='py-1 hover:text-slate-600'>Git</li>
-              <li className='py-1 hover:text-slate-600'>GitBucket</li>
+            <ul className='py-1 pl-5 text-teal-800 8ext-sm cursor-pointer'>
+              <li className='py-1 hover:text-slate-800'>Git</li>
+              <li className='py-1 hover:text-slate-800'>GitBucket</li>
             </ul>
           </div>
           <div>
             <h2 className='  text-blue-950 text-m font-bold mb-2 mt-5'>Tools</h2>
             <ul className='py-1 pl-5 text-teal-800 text-sm cursor-pointer'>
-              <li className='py-1 hover:text-slate-600'>VScode</li>
-              <li className='py-1 hover:text-slate-600'>Figma</li>
+              <li className='py-1 hover:text-slate-800'>VScode</li>
+              <li className='py-1 hover:text-slate-800'>Figma</li>
             </ul>
           </div>
         </div>
@@ -164,6 +165,14 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* This is the Footer section*/} 
+
+      <section className="footer">
+        <Footer/>
+      </section>  
+
+
     </main>
   ); 
 }

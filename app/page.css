@@ -23,11 +23,11 @@
     width: 20rem;
     margin: 0 auto;
     overflow: hidden;
-    margin-top: 10rem;
-    background-color: rgb(81, 197, 255);
+    margin-top: 6rem;
+    background-color: rgb(48, 116, 150);
     position: relative;
     border-radius: 50%;
-    animation: roll 3s ease-in-out;
+    animation: roll 3s ease;
 }
 
 .inner-heading{
@@ -91,7 +91,7 @@ nav{
     margin-bottom: 2rem;
     width: 100%;
     z-index: 100;
-    transition: all 1s ease;
+    transition: all .35s ;
 
 }
 nav.sticky{
@@ -107,7 +107,7 @@ nav.sticky{
     right: 0;
     bottom: 0;
     margin: 30px 80px;
-    transition: all .2s ;
+    transition: all .35s ;
     color: transparent;
     
 
@@ -121,4 +121,10 @@ nav.sticky{
     justify-content: center;
     align-items: center;
     color: black;
+}
+.footer{
+    padding: 1.5rem 0;
+    background-color: transparent;
+    font-family: monospace;
+    font-size: .9rem;
 }
