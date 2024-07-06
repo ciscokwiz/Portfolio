@@ -43,7 +43,7 @@ export default function Home() {
   
 
   return (
-    <main className=' bg-gray-300 px-10 min-h-screen main'>
+    <main className=' bg-gray-300 px-5 min-h-screen main'>
 
       <div className="top">
         <button onClick={handleClick}>
@@ -134,19 +134,19 @@ export default function Home() {
               <h2 className='  text-blue-950 text-m font-bold mb-2 mt-5 pt-2'>Webpage</h2>
               <h1 className='logo'>Hair<span className="hair-logo">Shades</span>.co</h1>
               <h3 className=' text-teal-800 text-m my-9'>HairShades.co website</h3>
-              <a className=' bg-cyan-500 px-3 py-1 text-white rounded-md hover:bg-slate-400' href="https://github.com/ciscokwiz/interactivity">Open</a>
+              <a className=' project-link bg-cyan-500 px-3 py-1 text-white rounded-md hover:bg-slate-400' href="https://github.com/ciscokwiz/interactivity">Open</a>
             </div>
             <div className=' text-center shadow-lg rounded-xl p-10 '>
               <h2 className='  text-blue-950 text-m font-bold mb-2 mt-5 pt-2'>Weather API</h2>
               <h1 className='logo'>Get<span className="weather-logo">Weather</span> App</h1>
               <h3 className=' text-teal-800 text-m my-5'>Weather API Page</h3>
-              <a className=' bg-cyan-500 px-3 py-1 text-white rounded-md hover:bg-slate-400' href="/weather">Open</a>
+              <a className=' project-link bg-cyan-500 px-3 py-1 text-white rounded-md hover:bg-slate-400' href="/weather">Open</a>
             </div>
             <div className=' text-center shadow-lg rounded-xl p-10  bg-gray-400'>
               <h2 className='  text-blue-950 text-m font-bold mb-2 mt-5 pt-2'>Form</h2>
               <h1 className='logo'>Vest<span className="signin-logo"> Login</span> Page</h1>
               <h3 className=' text-teal-800 text-m my-5'> Signin Page</h3>
-              <a className=' bg-cyan-500 px-3 py-1 text-white rounded-md hover:bg-slate-400' href="https://github.com/ciscokwiz/login-page">Open</a>
+              <a className=' project-link bg-cyan-500 px-3 py-1 text-white rounded-md hover:bg-slate-400' href="https://github.com/ciscokwiz/login-page">Open</a>
             </div>
           </div>
         </div>

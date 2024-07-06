@@ -91,7 +91,7 @@ nav{
     margin-bottom: 2rem;
     width: 100%;
     z-index: 100;
-    transition: all .35s ;
+    transition: all .5s ;
 
 }
 nav.sticky{
@@ -106,16 +106,16 @@ nav.sticky{
     position: fixed;
     right: 0;
     bottom: 0;
-    margin: 30px 80px;
-    transition: all .35s ;
+    margin: 15px 80px;
+    transition: all .5s ;
     color: transparent;
     
 
 }
 .returnToTop{
     background: #b0b0b0;
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 3rem;
+    width: 3rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -138,5 +138,15 @@ nav.sticky{
         display: grid;
         grid-template-columns: 1fr;
         gap: 5rem;
+        margin: 0 8rem;
+    }
+    .returnToTop{
+        height: 3.8rem;
+        width: 3.8rem;
+        margin-bottom: 2rem;
+    }
+    .phone a{
+        width: 150px;
+        height: 40px;
     }
 }
