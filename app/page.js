@@ -60,7 +60,7 @@ export default function Home() {
           <Navbar />
         </nav>
         <div className=' py-10 px-20 font-mono'>
-          <div className=' mb-5 mt-20'>
+          <div className=' mb-10 mt-20'>
             <p className='py-1 text-gray-800'>My name is</p>
             <h2 className=' text-blue-900 text-6xl pt-1 pb-2 font-extrabold my-3'>Ikezogwo Kosisochukwu</h2>
             <h2 className='text-blue-900 text-xl font-bold my-2'> 
@@ -91,7 +91,7 @@ export default function Home() {
     
       {/* This is the skills section*/}   
   
-      <section className='px-5 my-5' >
+      <section className='px-5 mb-5 mt-20' >
         <div className=' p-10 font-mono'>
           <h2 className='  text-blue-900 text-xl font-bold mt-4 mb-2'>Skills</h2>
           <p className=' mt-1 pb-3 text-gray-800'>Here are a few technologies i've been working with recently:</p>
@@ -126,7 +126,7 @@ export default function Home() {
 
       {/* This is the Projects section*/}   
 
-      <section className='px-5 my-5'>
+      <section className='px-5 mb-5 mt-20'>
         <div className='p-10 font-mono flex flex-col gap-10'>
           <h2 className='  text-blue-900 text-xl font-bold mt-4 mb-4'>Projects</h2>
           <div className=' lg:flex gap-10 flex-row justify-evenly phone' >
@@ -154,7 +154,7 @@ export default function Home() {
 
        {/* This is the Contacts section*/}   
      
-      <section className=''>
+      <section className='px-5 mb-10 mt-20'>
         <div className='p-10 font-mono'>
           <h2 className='  text-blue-900 text-xl font-bold mt-4 mb-4'>Contact Me</h2>
           <div className=' mt-7 ml-5 flex flex-col'>
