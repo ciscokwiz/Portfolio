@@ -43,7 +43,7 @@ export default function Home() {
   
 
   return (
-    <main className=' bg-gray-300 px-10 min-h-screen'>
+    <main className=' bg-gray-300 px-10 min-h-screen main'>
 
       <div className="top">
         <button onClick={handleClick}>
@@ -55,7 +55,7 @@ export default function Home() {
 
       {/* This is the Hero section*/} 
       
-      <section className=' min-h-screen'>
+      <section className=''>
         <nav >
           <Navbar />
         </nav>
@@ -129,7 +129,7 @@ export default function Home() {
       <section className='px-5 my-5'>
         <div className='p-10 font-mono flex flex-col gap-10'>
           <h2 className='  text-blue-900 text-xl font-bold mt-4 mb-4'>Projects</h2>
-          <div className=' lg:flex gap-10 flex-row justify-evenly' >
+          <div className=' lg:flex gap-10 flex-row justify-evenly phone' >
             <div className=' text-center shadow-2xl rounded-xl p-10 bg-gray-400' >
               <h2 className='  text-blue-950 text-m font-bold mb-2 mt-5 pt-2'>Webpage</h2>
               <h1 className='logo'>Hair<span className="hair-logo">Shades</span>.co</h1>
@@ -158,9 +158,9 @@ export default function Home() {
         <div className='p-10 font-mono'>
           <h2 className='  text-blue-900 text-xl font-bold mt-4 mb-4'>Contact Me</h2>
           <div className=' mt-7 ml-5 flex flex-col'>
-            <input className=' my-5 h-10 max-w-80 rounded pl-5' type="text" placeholder='Your name'/>
-            <input className=' my-5 h-10 max-w-80 rounded pl-5' type="email" placeholder='Email address'/>
-            <input className=' my-5 h-20 max-w-80 rounded pl-5' type="text" placeholder='Message'/>
+            <input className=' my-5 h-10 max-w-80 rounded pl-5 text-gray-900' type="text" placeholder='Your name'/>
+            <input className=' my-5 h-10 max-w-80 rounded pl-5 text-gray-900' type="email" placeholder='Email address'/>
+            <input className=' my-5 h-20 max-w-80 rounded pl-5 text-gray-900' type="text" placeholder='Message'/>
             <button className=' bg-cyan-500 px-3 py-1 text-white rounded-md hover:bg-slate-400 h-10 w-20 text-center' formAction=''>Send</button>
           </div>
         </div>

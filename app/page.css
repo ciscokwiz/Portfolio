@@ -128,3 +128,15 @@ nav.sticky{
     font-family: monospace;
     font-size: .9rem;
 }
+
+@media (max-width: 600px) {
+    .main{
+        margin: 0;
+        width: 100vh;
+    }
+    .phone{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
+}
