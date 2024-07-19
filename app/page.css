@@ -65,7 +65,7 @@
 
 }
 
-@keyframes roll {
+@keyframes bounce {
     0%,100%{
         transform: translateY(0);
 
@@ -96,8 +96,8 @@ nav{
 }
 nav.sticky{
     padding: 20px 100px;
-    background: #b0b0b0;
-    border: #bcbcbc;
+    background: #e5e5e5;
+    border: #e5e5e5;
     border-radius: 15px;
     top: 1px;
 
@@ -128,6 +128,77 @@ nav.sticky{
     font-family: monospace;
     font-size: .9rem;
 }
+body.dark main{
+    background-color: #1a1a1a;
+}
+
+body.dark p{
+    color: rgb(255, 255, 255);
+}
+body.dark h2 {
+    color: rgb(161, 148, 232);
+
+}
+body.dark nav a {
+    color: rgb(161, 148, 232);
+}
+body.dark nav .resume {
+    color: white;
+    background-color: rgb(172, 164, 225);
+}
+body.dark #hero a {
+    color: rgb(161, 148, 232);
+}
+body.dark .send{
+    background-color: rgb(161, 148, 232);
+
+}
+body.dark .phone a{
+    background-color: rgb(161, 148, 232);
+}
+body.dark .phone .card1{
+    background-color: rgb(224, 224, 224);
+}
+body.dark .phone .card2{
+    background-color: #1b1b1b;
+}
+body.dark nav .mode {
+    fill: #fff;
+}
+
+
+
+
+
+body.dark nav.sticky{
+    padding: 20px 100px;
+    background: #232323;
+    border: #232323;
+    border-radius: 15px;
+    top: 1px;
+
+}
+body.dark .returnToTop{
+    background: rgb(198, 194, 223);
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+body.dark .wave{
+    height: 20rem;
+    width: 20rem;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 6rem;
+    background-color: rgb(198, 194, 223);
+    position: relative;
+    border-radius: 50%;
+}
+
 
 @media (max-width: 600px) {
     .main{

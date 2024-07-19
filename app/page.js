@@ -38,12 +38,11 @@ export default function Home() {
     )
   }
 
-
   
   
 
   return (
-    <main className=' bg-gray-300 px-5 min-h-screen main'>
+    <main className=' bg-white px-5 min-h-screen main' id='main'>
 
       <div className="top">
         <button onClick={handleClick}>
@@ -59,7 +58,7 @@ export default function Home() {
         <nav >
           <Navbar />
         </nav>
-        <div className=' py-10 px-20 font-mono'>
+        <div className=' py-10 px-20 font-mono' id='hero'>
           <div className=' mb-10 mt-20'>
             <p className='py-1 text-gray-800'>My name is</p>
             <h2 className=' text-blue-900 text-6xl pt-1 pb-2 font-extrabold my-3'>Ikezogwo Kosisochukwu</h2>
@@ -93,10 +92,10 @@ export default function Home() {
   
       <section className='px-5 mb-5 mt-20' >
         <div className=' p-10 font-mono'>
-          <h2 className='  text-blue-900 text-xl font-bold mt-4 mb-2'>Skills</h2>
-          <p className=' mt-1 pb-3 text-gray-800'>Here are a few technologies i've been working with recently:</p>
+          <h2 className='  text-blue-900 text-xl font-bold mt-4 mb-4'>Skills</h2>
+          <p className=' mt-1 pb-3 mb-10 text-gray-800'>Here are a few technologies i've been working with recently:</p>
           <div>
-            <h2 className='  text-blue-950 text-m font-bold mb-2 mt-5'>Frontend Frameworks</h2>
+            <h2 className='  text-blue-900 text-m font-bold mb-2 mt-5'>Frontend Frameworks</h2>
             <ul className='py-1 pl-5 text-teal-800 text-sm cursor-pointer'>
               <li className='py-1 hover:text-slate-800'>Html</li>
               <li className='py-1 hover:text-slate-800'>CSS</li>
@@ -128,21 +127,21 @@ export default function Home() {
 
       <section className='px-5 mb-5 mt-20'>
         <div className='p-10 font-mono flex flex-col gap-10'>
-          <h2 className='  text-blue-900 text-xl font-bold mt-4 mb-4'>Projects</h2>
+          <h2 className='  text-blue-900 text-xl font-bold mt-4 mb-10'>Projects</h2>
           <div className=' lg:flex gap-10 flex-row justify-evenly phone' >
-            <div className=' text-center shadow-2xl rounded-xl p-10 bg-gray-400' >
+            <div className=' text-center shadow-2xl rounded-xl p-10 bg-gray-400 card1' >
               <h2 className='  text-blue-950 text-m font-bold mb-2 mt-5 pt-2'>Webpage</h2>
               <h1 className='logo'>Hair<span className="hair-logo">Shades</span>.co</h1>
               <h3 className=' text-teal-800 text-m my-9'>HairShades.co website</h3>
               <a className=' project-link bg-cyan-500 px-3 py-1 text-white rounded-md hover:bg-slate-400' href="https://github.com/ciscokwiz/interactivity">Open</a>
             </div>
-            <div className=' text-center shadow-lg rounded-xl p-10 '>
+            <div className=' text-center shadow-lg rounded-xl p-10 card2'>
               <h2 className='  text-blue-950 text-m font-bold mb-2 mt-5 pt-2'>Weather API</h2>
               <h1 className='logo'>Get<span className="weather-logo">Weather</span> App</h1>
               <h3 className=' text-teal-800 text-m my-5'>Weather API Page</h3>
               <a className=' project-link bg-cyan-500 px-3 py-1 text-white rounded-md hover:bg-slate-400' href="/weather">Open</a>
             </div>
-            <div className=' text-center shadow-lg rounded-xl p-10  bg-gray-400'>
+            <div className=' text-center shadow-lg rounded-xl p-10  bg-gray-400 card1'>
               <h2 className='  text-blue-950 text-m font-bold mb-2 mt-5 pt-2'>Form</h2>
               <h1 className='logo'>Vest<span className="signin-logo"> Login</span> Page</h1>
               <h3 className=' text-teal-800 text-m my-5'> Signin Page</h3>
@@ -158,10 +157,10 @@ export default function Home() {
         <div className='p-10 font-mono'>
           <h2 className='  text-blue-900 text-xl font-bold mt-4 mb-4'>Contact Me</h2>
           <div className=' mt-7 ml-5 flex flex-col'>
-            <input className=' my-5 h-10 max-w-80 rounded pl-5 text-gray-900' type="text" placeholder='Your name'/>
-            <input className=' my-5 h-10 max-w-80 rounded pl-5 text-gray-900' type="email" placeholder='Email address'/>
-            <input className=' my-5 h-20 max-w-80 rounded pl-5 text-gray-900' type="text" placeholder='Message'/>
-            <button className=' bg-cyan-500 px-3 py-1 text-white rounded-md hover:bg-slate-400 h-10 w-20 text-center' formAction=''>Send</button>
+            <input className=' my-5 h-10 max-w-80 rounded pl-5 text-gray-900 bg-gray-300' id='contact-info name' type="text" placeholder='Your name'/>
+            <input className=' my-5 h-10 max-w-80 rounded pl-5 text-gray-900 bg-gray-300' id='contact-info image' type="email" placeholder='Email address'/>
+            <input className=' my-5 h-20 max-w-80 rounded pl-5 text-gray-900 bg-gray-300' id='contact-info message' type="text" placeholder='Message'/>
+            <button className=' bg-cyan-500 px-3 py-1 text-white rounded-md hover:bg-slate-400 h-8 w-20 text-center mt-5 send' formAction=''>Send</button>
           </div>
         </div>
       </section>
