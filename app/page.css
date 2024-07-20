@@ -204,7 +204,7 @@ body.dark .wave{
 @media (max-width: 600px) {
     .main{
         margin: 0;
-        width: 100%;
+        width: 100dvh;
     }
     .phone{
         display: grid;
