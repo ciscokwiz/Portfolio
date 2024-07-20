@@ -204,7 +204,7 @@ body.dark .wave{
 @media (max-width: 600px) {
     .main{
         margin: 0;
-        width: 100dvh;
+        width: 100vh;
     }
     .phone{
         display: grid;
@@ -213,8 +213,8 @@ body.dark .wave{
         margin: 0 8rem;
     }
     .returnToTop{
-        height: 3.8rem;
-        width: 3.8rem;
+        height: 4rem;
+        width: 4rem;
         margin-bottom: 2rem;
     }
     .phone a{
