@@ -91,7 +91,7 @@ export default function Home() {
       {/* This is the skills section*/}   
   
       <section className='px-5 mb-5 mt-20' >
-        <div className=' p-10 font-mono'>
+        <div className=' p-10 font-mono skill'>
           <h2 className='  text-blue-900 text-xl font-bold mt-4 mb-4'>Skills</h2>
           <p className=' mt-1 pb-3 mb-10 text-gray-800'>Here are a few technologies i've been working with recently:</p>
           <div>

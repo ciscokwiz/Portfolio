@@ -96,8 +96,8 @@ nav{
 }
 nav.sticky{
     padding: 20px 100px;
-    background: #e5e5e5;
-    border: #e5e5e5;
+    background: #f3f3f3;
+    border: #f3f3f3;
     border-radius: 15px;
     top: 1px;
 
@@ -165,8 +165,9 @@ body.dark .phone .card2{
 body.dark nav .mode {
     fill: #fff;
 }
-
-
+body.dark .skill li:hover {
+    color: #fff;
+}
 
 
 
