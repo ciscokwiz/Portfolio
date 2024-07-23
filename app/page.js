@@ -58,12 +58,12 @@ export default function Home() {
         <nav >
           <Navbar />
         </nav>
-        <div className=' py-10 px-20 font-mono' id='hero'>
+        <div className=' py-10 font-mono' id='hero'>
           <div className=' mb-10 mt-20'>
-            <p className='py-1 text-gray-800'>My name is</p>
-            <h2 className=' text-blue-900 text-6xl pt-1 pb-2 font-extrabold my-3'>Ikezogwo Kosisochukwu</h2>
+            <p className='py-1 text-gray-800 hero-t1'>My name is</p>
+            <h2 className=' text-blue-900 text-6xl pt-1 pb-2 font-extrabold my-3 hero-t2'>Ikezogwo Kosisochukwu</h2>
             <h2 className='text-blue-900 text-xl font-bold my-2'> 
-              <div className="inner-heading">
+              <div className="inner-heading hero-t3">
                 <span>
                     Frontend Web Developer<br/>
                     React Developer<br/>
@@ -73,11 +73,11 @@ export default function Home() {
               </div>
 
             </h2>
-            <p className='py-3 text-gray-800'>
-              I'm software engineer based in Lagos, NG specializing in building (and ocassionally designing) exceptional websites, applications, and everything in between
+            <p className='py-3 text-gray-800 hero-t1'>
+              I'm software engineer based in Lagos, specializing in building (ocassionally designing) exceptional websites, applications, and everything in between.
             </p>          
           </div>
-          <div className=' text-3xl flex gap-10 text-gray-900 py-3 cursor-pointer'>
+          <div className=' text-3xl flex gap-10 text-gray-900 py-3 cursor-pointer socialicon'>
             <a href= 'https://x.com/ciscoikz' target=""><AiFillTwitterCircle/></a>
             <a href='https://www.linkedin.com/in/kosiso-ikezogwo/' target=""><AiFillLinkedin/></a>
             <a href='https://ikezogwokosiso16@gmail.com' target=""><AiFillMail/></a>
@@ -90,10 +90,10 @@ export default function Home() {
     
       {/* This is the skills section*/}   
   
-      <section className='px-5 mb-5 mt-20' >
-        <div className=' p-10 font-mono skill'>
-          <h2 className='  text-blue-900 text-xl font-bold mt-4 mb-4'>Skills</h2>
-          <p className=' mt-1 pb-3 mb-10 text-gray-800'>Here are a few technologies i've been working with recently:</p>
+      <section className=' mb-5 mt-8' >
+        <div className=' py-10 font-mono skill'>
+          <h2 className='  text-blue-900 text-xl font-bold mt-4 mb-3 hero-t3'>Skills</h2>
+          <p className=' mt-1 pb-3 mb-8 text-gray-800 hero-t1'>Here are a few technologies i've been working with recently:</p>
           <div>
             <h2 className='  text-blue-900 text-m font-bold mb-2 mt-5'>Frontend Frameworks</h2>
             <ul className='py-1 pl-5 text-teal-800 text-sm cursor-pointer'>
@@ -107,14 +107,14 @@ export default function Home() {
             </ul>
           </div>
           <div>
-            <h2 className='  text-blue-950 text-m font-bold mb-2 mt-5'>Version Control</h2>
+            <h2 className='  text-blue-900 text-m font-bold mb-2 mt-5'>Version Control</h2>
             <ul className='py-1 pl-5 text-teal-800 8ext-sm cursor-pointer'>
               <li className='py-1 hover:text-slate-800'>Git</li>
               <li className='py-1 hover:text-slate-800'>GitBucket</li>
             </ul>
           </div>
           <div>
-            <h2 className='  text-blue-950 text-m font-bold mb-2 mt-5'>Tools</h2>
+            <h2 className='  text-blue-900 text-m font-bold mb-2 mt-5'>Tools</h2>
             <ul className='py-1 pl-5 text-teal-800 text-sm cursor-pointer'>
               <li className='py-1 hover:text-slate-800'>VScode</li>
               <li className='py-1 hover:text-slate-800'>Figma</li>
@@ -125,26 +125,23 @@ export default function Home() {
 
       {/* This is the Projects section*/}   
 
-      <section className='px-5 mb-5 mt-20'>
-        <div className='p-10 font-mono flex flex-col gap-10'>
+      <section className=' mb-5 mt-10'>
+        <div className='py-10 font-mono flex flex-col gap-10'>
           <h2 className='  text-blue-900 text-xl font-bold mt-4 mb-10'>Projects</h2>
-          <div className=' lg:flex gap-10 flex-row justify-evenly phone' >
+          <div className=' gap-10 flex-row justify-between phone' >
             <div className=' text-center shadow-2xl rounded-xl p-10 bg-gray-400 card1' >
-              <h2 className='  text-blue-950 text-m font-bold mb-2 mt-5 pt-2'>Webpage</h2>
-              <h1 className='logo'>Hair<span className="hair-logo">Shades</span>.co</h1>
-              <h3 className=' text-teal-800 text-m my-9'>HairShades.co website</h3>
+              <h2 className='  text-blue-950 text-m font-bold mb-2 mt-1 pt-1'>Webpage</h2>
+              <h1 className='logo'>Hair<span className="hair-logo">Shades</span></h1>
               <a className=' project-link bg-cyan-500 px-3 py-1 text-white rounded-md hover:bg-slate-400' href="https://github.com/ciscokwiz/interactivity">Open</a>
             </div>
             <div className=' text-center shadow-lg rounded-xl p-10 card2'>
-              <h2 className='  text-blue-950 text-m font-bold mb-2 mt-5 pt-2'>Weather API</h2>
-              <h1 className='logo'>Get<span className="weather-logo">Weather</span> App</h1>
-              <h3 className=' text-teal-800 text-m my-5'>Weather API Page</h3>
+              <h2 className='  text-blue-950 text-m font-bold mb-2 mt-1 pt-1'>Weather API</h2>
+              <h1 className='text-black logo'>Get <span className="weather-logo">Weather</span></h1>
               <a className=' project-link bg-cyan-500 px-3 py-1 text-white rounded-md hover:bg-slate-400' href="/weather">Open</a>
             </div>
             <div className=' text-center shadow-lg rounded-xl p-10  bg-gray-400 card1'>
-              <h2 className='  text-blue-950 text-m font-bold mb-2 mt-5 pt-2'>Form</h2>
-              <h1 className='logo'>Vest<span className="signin-logo"> Login</span> Page</h1>
-              <h3 className=' text-teal-800 text-m my-5'> Signin Page</h3>
+              <h2 className='  text-blue-950 text-m font-bold mb-2 mt-1 pt-1'>Form</h2>
+              <h1 className='logo'>Vest<span className="signin-logo"> Login</span></h1>
               <a className=' project-link bg-cyan-500 px-3 py-1 text-white rounded-md hover:bg-slate-400' href="https://github.com/ciscokwiz/login-page">Open</a>
             </div>
           </div>
@@ -153,14 +150,14 @@ export default function Home() {
 
        {/* This is the Contacts section*/}   
      
-      <section className='px-5 mb-10 mt-20'>
-        <div className='p-10 font-mono'>
+      <section className='mb-10 mt-10'>
+        <div className='py-10 font-mono'>
           <h2 className='  text-blue-900 text-xl font-bold mt-4 mb-4'>Contact Me</h2>
-          <div className=' mt-7 ml-5 flex flex-col'>
-            <input className=' my-5 h-10 max-w-80 rounded pl-5 text-gray-900 bg-gray-300' id='contact-info name' type="text" placeholder='Your name'/>
-            <input className=' my-5 h-10 max-w-80 rounded pl-5 text-gray-900 bg-gray-300' id='contact-info image' type="email" placeholder='Email address'/>
+          <div className=' mt-7 ml-5 flex flex-col pt-5'>
+            <input className=' my-3 h-10 max-w-80 rounded pl-5 text-gray-900 bg-gray-300' id='contact-info name' type="text" placeholder='Your name'/>
+            <input className=' my-3 h-10 max-w-80 rounded pl-5 text-gray-900 bg-gray-300' id='contact-info image' type="email" placeholder='Email address'/>
             <input className=' my-5 h-20 max-w-80 rounded pl-5 text-gray-900 bg-gray-300' id='contact-info message' type="text" placeholder='Message'/>
-            <button className=' bg-cyan-500 px-3 py-1 text-white rounded-md hover:bg-slate-400 h-8 w-20 text-center mt-5 send' formAction=''>Send</button>
+            <button className=' bg-cyan-500 px-1 py-1 text-white rounded-md hover:bg-slate-400 min-h-8 max-w-20 text-center mt-5 send' formAction=''>Send</button>
           </div>
         </div>
       </section>

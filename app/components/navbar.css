@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 600px){
+    .resume{
+        font-size: 0.8rem;
+        background-color: rgb(90, 123, 173);
+    
+    }
+    .mode{
+        font-size: 1.1rem /* 20px */;
+        line-height: 1.5rem /* 28px */;
+    }
+    
+    ul button{
+        top: 1px;
+    }
+}
+
+@media (min-width: 992px){
+    .resume{
+        font-size: .9rem;
+        background-color: rgb(90, 123, 173);
+        top: 1px;
+    
+    }
+    .mode{
+        font-size: 1.3rem /* 20px */;
+        line-height: 1.5rem /* 28px */;
+    }
+    ul button{
+        top: 0;
+    }
+    .nav {
+        font-size: 1.15rem;
+    }
+}
+

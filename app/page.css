@@ -3,7 +3,7 @@
     margin: 2.5rem 0rem;
 }
 .hair-logo{
-    background-image: linear-gradient(45deg, rgb(181, 181, 240) 10%, rgb(242, 147, 238) 45%, rgb(235, 160, 89) 80%);
+    background-image: linear-gradient(45deg, rgb(92, 124, 240) 10%, rgb(217, 84, 240) 45%, rgb(238, 131, 85) 80%);
     background-clip: text;
     color: transparent;
 }
@@ -13,7 +13,7 @@
     color: transparent;
 }
 .signin-logo{
-    background-image: linear-gradient(45deg, rgb(181, 181, 240) 10%, rgb(242, 147, 238) 45%, rgb(235, 160, 89) 80%);
+    background-image: linear-gradient(45deg, rgb(92, 124, 240) 10%, rgb(217, 84, 240) 45%, rgb(238, 131, 85) 80%);
     background-clip: text;
     color: transparent;
 }
@@ -27,7 +27,7 @@
     background-color: rgb(48, 116, 150);
     position: relative;
     border-radius: 50%;
-    animation: roll 3s ease;
+    animation: bounce 3s ease;
 }
 
 .inner-heading{
@@ -114,8 +114,8 @@ nav.sticky{
 }
 .returnToTop{
     background: #b0b0b0;
-    height: 3rem;
-    width: 3rem;
+    height: 2rem;
+    width: 2rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -198,27 +198,226 @@ body.dark .wave{
     background-color: rgb(198, 194, 223);
     position: relative;
     border-radius: 50%;
+    animation: bounce 3s ease;
+
 }
 
 
 @media (max-width: 600px) {
     .main{
         margin: 0;
-        width: 100vh;
+        max-width: 100vh;
     }
     .phone{
         display: grid;
         grid-template-columns: 1fr;
         gap: 5rem;
         margin: 0 8rem;
+        justify-content: center;
     }
     .returnToTop{
-        height: 4rem;
-        width: 4rem;
+        min-height: 3rem;
+        min-width: 3rem;
         margin-bottom: 2rem;
     }
     .phone a{
         width: 150px;
         height: 40px;
     }
+    .socialicon{
+        align-items: center;
+        display: flex;
+        place-content: center;
+        gap: 4rem;
+
+    }
+    .socialicon a{
+        font-size: x-large;
+    }
+    .hero-t1{
+        font-size: 0.9rem;
+        padding-left: 2px;
+    }
+    .hero-t2{
+        font-size: 2.5rem;
+        margin: 5px 0;
+    }
+    .hero-t3{
+        font-size: 1.1rem;
+        
+    }
+    .wave{
+        height: 10rem;
+        width: 10rem;
+        margin: 0 auto;
+        overflow: hidden;
+        margin-top: 3rem;
+        background-color: rgb(48, 116, 150);
+        position: relative;
+        border-radius: 50%;
+        animation: bounce 3s ease;
+    }
+    body.dark .wave{
+        height: 10rem;
+        width: 10rem;
+        margin: 0 auto;
+        overflow: hidden;
+        margin-top: 3rem;
+        background-color: rgb(48, 116, 150);
+        position: relative;
+        border-radius: 50%;
+        animation: bounce 3s ease;
+    }
+    .card1{
+        max-height: 15rem;
+        max-width: 12rem;
+        text-align: center;
+
+    }
+    .card2{
+        max-height: 15rem;
+        max-width: 12rem;
+        text-align: center;
+
+    }
+    .card1 h1, h2, a {
+       font-size: 1rem;
+
+    }
+    .card2 h1, a {
+        font-size: 0.9rem;
+     }
+     nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 1.2rem 1rem;
+        margin-bottom: 1.5rem;
+        width: 100%;
+        z-index: 100;
+        transition: all .5s ;
+    
+    }
+    nav.sticky{
+        padding: 1.1rem .6rem;
+        background: #f3f3f3;
+        border: #f3f3f3;
+        border-radius: 13px;
+        top: 1px;
+    }
+    body.dark nav.sticky{
+        padding: 1.1rem .6rem;
+        background: #232323;
+        border: #232323;
+        border-radius: 13px;
+        top: 1px;
+    }
+    #hero{
+        padding: .6rem 0;
+    }
+    .card1 a{
+        padding: .2rem .8rem;
+    }
+    .send{
+        background-color: rgb(90, 123, 173);
+    }
+    .project-link{
+        background-color: rgb(90, 123, 173);
+    }
+    .top{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        margin: .2rem 1rem;
+        transition: all .5s ;
+        color: transparent;
+        
+    
+    }
+    .returnToTop{
+        background: #b0b0b0;
+        height: 2rem;
+        max-width: 2rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+    }
+
 }
+
+@media (min-width: 992px) {
+    .wave{
+        height: 18rem;
+        width: 18rem;
+        margin: 0 auto;
+        overflow: hidden;
+        margin-top: 6rem;
+        background-color: rgb(48, 116, 150);
+        position: relative;
+        border-radius: 50%;
+        animation: bounce 3s ease;
+    }
+    .main{
+        max-width: 100%;
+        padding: 0 4rem;
+    }
+    .socialicon a{
+        font-size: 1.8rem;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 30px 50px;
+        margin-bottom: 2rem;
+        width: 100%;
+        z-index: 100;
+        transition: all .5s ;
+    
+    }
+    nav.sticky{
+        padding: 20px 60px;
+        background: #f3f3f3;
+        border: #f3f3f3;
+        border-radius: 15px;
+        top: 1px;
+    
+    }
+    .send{
+        background-color: rgb(90, 123, 173);
+    }
+    .project-link{
+        background-color: rgb(90, 123, 173);
+    }
+    .phone{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        margin: 0 1rem;
+        justify-content: center;
+    }
+    .top{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        margin: 1rem 2rem;
+        transition: all .5s ;
+        color: transparent;
+        
+    
+    }
+    .returnToTop{
+        background: #b0b0b0;
+        height: 3rem;
+        min-width: 3rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+    }
+
+}
+
