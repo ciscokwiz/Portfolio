@@ -257,7 +257,7 @@ body.dark .footer i{
         width: 10rem;
         margin: 0 auto;
         overflow: hidden;
-        margin-top: 3rem;
+        margin-top: 5rem;
         background-color: rgb(48, 116, 150);
         position: relative;
         border-radius: 50%;
@@ -268,7 +268,7 @@ body.dark .footer i{
         width: 10rem;
         margin: 0 auto;
         overflow: hidden;
-        margin-top: 3rem;
+        margin-top: 5rem;
         background-color: rgb(48, 116, 150);
         position: relative;
         border-radius: 50%;
@@ -400,7 +400,7 @@ body.dark .footer i{
     .phone{
         display: flex;
         flex-direction: row;
-        gap: 2rem;
+        gap: 10rem;
         margin: 0 1rem;
         justify-content: center;
     }
