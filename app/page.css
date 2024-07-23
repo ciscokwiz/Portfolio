@@ -201,6 +201,12 @@ body.dark .wave{
     animation: bounce 3s ease;
 
 }
+body.dark .footer h5{
+    color: #fff;
+}
+body.dark .footer i{
+    color: #fff;
+}
 
 
 @media (max-width: 600px) {
