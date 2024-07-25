@@ -426,4 +426,50 @@ body.dark .footer i{
     }
 
 }
+@media (min-width: 768px){
+    .main{
+        margin: 0;
+        max-width: 100%;
+    }
+    .phone{
+        display: flex;
+        flex-direction: row;
+        gap: 1.4rem;
+        margin: 0 .5rem;
+        justify-content: center;
 
+    }
+    .wave{
+        height: 16rem;
+        width: 16rem;
+        margin: 0 auto;
+        overflow: hidden;
+        margin-top: 6rem;
+        background-color: rgb(48, 116, 150);
+        position: relative;
+        border-radius: 50%;
+        animation: bounce 3s ease;
+    }
+    .top{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        margin: 1rem 1.5rem;
+        transition: all .5s ;
+        color: transparent;
+        
+    
+    }
+    .returnToTop{
+        background: #b0b0b0;
+        height: 3.1rem;
+        min-width: 3.1rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+    }
+
+
+}

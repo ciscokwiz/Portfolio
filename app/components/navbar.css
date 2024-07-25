@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+
+
+
 @media (max-width: 600px){
     .resume{
         font-size: 0.8rem;
@@ -12,11 +15,13 @@
         font-size: 1.1rem /* 20px */;
         line-height: 1.5rem /* 28px */;
     }
-    
-    ul button{
-        top: 1px;
+    nav-icon{
+        align-items: center;
+        place-content: center;
     }
 }
+
+
 
 @media (min-width: 992px){
     .resume{
@@ -29,11 +34,33 @@
         font-size: 1.3rem /* 20px */;
         line-height: 1.5rem /* 28px */;
     }
-    ul button{
-        top: 0;
-    }
     .nav {
         font-size: 1.15rem;
     }
+    nav-icon{
+        align-items: center;
+        place-content: center;
+    }
 }
 
+
+
+@media (min-width: 768px){
+    .mode{
+        font-size: 1.3rem /* 20px */;
+        line-height: 1.5rem /* 28px */;
+    }
+    .resume{
+        font-size: .8rem;
+        background-color: rgb(90, 123, 173);
+        top: 0;
+    
+    }
+    nav-icon{
+        align-items: center;
+        place-content: center;
+    }
+    .nav .logo-text{
+        font-size: 1.1rem;
+    }
+}
